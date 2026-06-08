@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="th">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>งานราชการ/ลูกจ้าง ไม่ต้องผ่านภาค ก. age45+ อุดรธานีเท่านั้น</title><style>
+:root{--bg:#f7f9fc;--ink:#1d2733;--muted:#697687;--card:#fff;--line:#dce5ef;--blue:#2366d1;--green:#16875a;--violet:#7456d9;--orange:#e58b2a;--red:#b84630;--shadow:0 16px 40px rgba(21,38,67,.10);--radius:24px}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 5%,rgba(35,102,209,.14),transparent 28%),radial-gradient(circle at 90% 10%,rgba(22,135,90,.14),transparent 24%),var(--bg);line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 56px}header{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:stretch;margin-bottom:24px}
+.hero{background:linear-gradient(135deg,#123a84,#2366d1 55%,#4fa3ff);color:white;border-radius:32px;padding:34px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.12);right:-80px;top:-90px}
+h1{font-size:clamp(27px,4vw,47px);line-height:1.16;margin:0 0 14px}h2{font-size:clamp(22px,3vw,32px);margin:30px 0 14px}.subtitle{font-size:18px;max-width:800px;opacity:.94;margin:0}
+.stamp{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25);padding:9px 14px;border-radius:999px;font-weight:800;margin-bottom:18px}.summary{background:var(--card);border:1px solid var(--line);border-radius:32px;padding:24px;box-shadow:var(--shadow);display:grid;gap:14px}.stat{display:flex;gap:14px;align-items:center;padding:16px;border-radius:20px;background:#f6f8fb}.icon{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;font-size:24px;background:white;border:1px solid var(--line)}.stat b{display:block;font-size:24px}.stat span{color:var(--muted);font-size:14px}
+.notice{margin:22px 0;padding:16px 18px;background:#fff8ed;border:1px solid #f3d7ad;border-radius:20px;color:#664212}.sourcebar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.sourcebar div{background:white;border:1px solid var(--line);border-radius:18px;padding:14px;color:var(--muted)}.sourcebar b{color:var(--ink)}
+.area-section{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 24px}.area-box{background:white;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 8px 22px rgba(21,38,67,.05)}.area-box strong{font-size:28px;display:block}.area-box span{color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 18px}.filters button{border:1px solid var(--line);background:white;padding:10px 14px;border-radius:999px;cursor:pointer;font-weight:800;color:var(--ink);box-shadow:0 6px 20px rgba(21,38,67,.05)}.filters button.active{background:var(--ink);color:white;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.job-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 10px 26px rgba(21,38,67,.07);display:flex;flex-direction:column;min-height:520px}.card-top{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.area-pill,.type-pill,.status-pill,.age-pill,.ocsc-pill{font-size:13px;padding:6px 10px;border-radius:999px;font-weight:900}.area-pill{background:#eaf2ff;color:#1855b5}.type-pill{background:#ecfbf4;color:#10764d}.status-pill{background:#fff2df;color:#9b5412}.age-pill{background:#f1edff;color:#6542bc}.ocsc-pill{background:#eefbf3;color:#0e7248}
+.job-card h3{margin:0 0 8px;font-size:21px;line-height:1.3}.agency{color:var(--muted);margin:0 0 14px}.mini-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:16px}.mini-grid div{background:#f7f9fc;border:1px solid #edf1f6;padding:11px 12px;border-radius:16px}.mini-grid b{display:block;font-size:13px;color:#495565}.mini-grid span{display:block;margin-top:2px}
+.link-actions{margin-top:auto;display:grid;grid-template-columns:1fr;gap:8px}.apply-link,.backup-link{text-align:center;text-decoration:none;padding:12px 14px;border-radius:16px;font-weight:900}.apply-link{color:white;background:linear-gradient(135deg,var(--blue),var(--violet))}.backup-link{color:var(--blue);background:#eef5ff;border:1px solid #bdd8ff}.empty{background:white;border:1px dashed var(--line);border-radius:24px;padding:24px;color:var(--muted)}
+footer{margin-top:26px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:18px}
+@media(max-width:980px){header,.grid{grid-template-columns:1fr}.area-section,.sourcebar{grid-template-columns:1fr 1fr}}@media(max-width:640px){.hero{padding:24px;border-radius:24px}.area-section,.sourcebar{grid-template-columns:1fr}.job-card{min-height:auto}}@media print{.filters{display:none}.apply-link,.backup-link{color:var(--blue);background:white;border:1px solid var(--line)}body{background:white}.job-card,.hero,.summary{box-shadow:none}}
+</style></head>
+<body><main class="wrap">
+<header><section class="hero"><div class="stamp">📌 อัปเดต ณ 9 มิถุนายน 2569</div><h1>งานราชการ / ลูกจ้าง<br>อุดรธานีเท่านั้น</h1><p class="subtitle">คัดเฉพาะงานที่สถานที่ทำงานอยู่ในอุดรธานีอย่างชัดเจน, ไม่ต้องผ่านภาค ก./ก.พ., อายุเกิน 45 น่าจะสมัครได้, และปิดรับตั้งแต่ 9 มิ.ย. 2569 เป็นต้นไป</p></section>
+<aside class="summary"><div class="stat"><div class="icon">🧾</div><div><b>6</b><span>รายการที่ผ่านเกณฑ์</span></div></div><div class="stat"><div class="icon">📅</div><div><b>≥ 9 มิ.ย.</b><span>คัดออกถ้าปิดรับก่อน 9 มิ.ย. 2569</span></div></div><div class="stat"><div class="icon">✅</div><div><b>ไม่ต้อง ภาค ก.</b><span>แสดงในทุกการ์ด</span></div></div></aside></header>
+<div class="notice"><b>เกณฑ์คัดกรอง:</b> ยังเปิดรับอยู่ ณ 9 มิ.ย. 2569 หรือเริ่มรับสมัครวันที่ 9 มิ.ย. แล้ว, วันปิดรับต้องไม่ก่อน 9 มิ.ย. 2569, ต้องไม่ต้องผ่านภาค ก./ก.พ., และต้องรับผู้สมัครอายุเกิน 45 ได้จากเงื่อนไขที่ไม่ระบุเพดานอายุหรือระบุเพดานที่สอดคล้อง เช่น 18–60 ปี</div>
+<section class="sourcebar"><div><b>แหล่งหลัก 1:</b> ประกาศผลสอบ.com หมวดงานไม่ต้องผ่าน ก.พ.</div><div><b>แหล่งหลัก 2:</b> job-108 หมวดไม่ต้องผ่านภาค ก. ใช้ตรวจซ้ำเท่าที่มีข้อมูล</div><div><b>แหล่งหลัก 3:</b> JOB OCSC ใช้เปิดตรวจ แต่หน้าเว็บเป็น dynamic จึงใช้ได้จำกัด</div></section>
+<section class="area-section"><div class="area-box"><strong>6</strong><span>อุดรธานี</span></div><div class="area-box"><strong>4</strong><span>พบตัวเลขเงินเดือน</span></div><div class="area-box"><strong>1</strong><span>ปิดรับวันนี้ 9 มิ.ย.</span></div><div class="area-box"><strong>อุดรเท่านั้น</strong><span>ตัดงานส่วนกลาง/ทั่วประเทศออก</span></div></section>
+<nav class="filters" aria-label="ตัวกรอง"><button class="active" data-filter="ทั้งหมด">ทั้งหมด</button><button class="" data-filter="ปิดวันนี้ 9 มิ.ย.">ปิดวันนี้ 9 มิ.ย.</button><button class="" data-filter="ปิดหลัง 9 มิ.ย.">ปิดหลัง 9 มิ.ย.</button><button class="" data-filter="พบเงินเดือน">พบเงินเดือน</button><button class="" data-filter="ไม่พบเงินเดือน">ไม่พบเงินเดือน</button><button class="" data-filter="อายุชัดเจน">อายุชัดเจน</button><button class="" data-filter="ไม่ระบุเพดานอายุ">ไม่ระบุเพดานอายุ</button></nav>
+<h2>รายการที่ผ่านเกณฑ์ล่าสุด</h2>
+<section class="grid">
+<article class="job-card" data-area="อุดรธานี" data-deadline="9 มิ.ย. 2569" data-salary="พบเงินเดือน" data-age="ไม่ระบุเพดานอายุ">
+  <div class="card-top">
+    <span class="area-pill">📍 อุดรธานี</span>
+    <span class="type-pill">พนักงานราชการทั่วไป</span>
+    <span class="status-pill">ปิดวันนี้</span>
+    <span class="age-pill">age45+</span>
+    <span class="ocsc-pill">ไม่ต้อง ภาค ก.</span>
+  </div>
+  <h3>นักวิชาการอุตสาหกรรม — ศูนย์ส่งเสริมอุตสาหกรรมภาคที่ 4 จ.อุดรธานี</h3>
+  <p class="agency">🏛️ กรมส่งเสริมอุตสาหกรรม</p>
+  <div class="mini-grid">
+    <div><b>จำนวน</b><span>1 อัตราในอุดรธานี จากประกาศ 26 อัตรา</span></div>
+    <div><b>ช่วงสมัคร / วันปิดรับ</b><span>1–9 มิ.ย. 2569 — ปิดรับ 9 มิ.ย. 2569</span></div>
+    <div><b>เงินเดือน/ค่าตอบแทน</b><span>21,780 บาท/เดือน</span></div>
+    <div><b>สถานที่ทำงาน</b><span>ศูนย์ส่งเสริมอุตสาหกรรมภาคที่ 4 จังหวัดอุดรธานี</span></div>
+    <div><b>เงื่อนไขอายุที่เข้าเกณฑ์</b><span>ไม่พบเพดานอายุสูงสุดในข้อมูลหลักที่เปิดดู; จัดเป็นเข้าเกณฑ์แบบไม่ระบุอายุ</span></div>
+    <div><b>ไม่ต้องผ่าน ภาค ก./ก.พ.</b><span>ไม่ต้องผ่าน ภาค ก./ก.พ. — แหล่งหลักจัดอยู่ในหมวดไม่ต้องผ่าน ก.พ.</span></div>
+    <div><b>วุฒิ/เงื่อนไข</b><span>ปริญญาตรีทุกสาขาวิชา</span></div>
+    <div><b>วิธีสมัคร</b><span>สมัครออนไลน์ผ่าน dip.thaijobjob.com ภายใน 9 มิ.ย. 2569</span></div>
+    <div><b>แหล่งที่ใช้คัด</b><span>ประกาศผลสอบ.com</span></div>
+  </div>
+  <div class="link-actions">
+    <a class="apply-link" href="https://www.xn--12c4cbf7aots1ayx.com/prd-detail.php?prd_id=545" target="_blank" rel="noopener">เปิดประกาศหลัก ↗</a>
+    <a class="backup-link" href="https://dip.thaijobjob.com" target="_blank" rel="noopener">ลิงก์สำรอง / ค้นหา ↗</a>
+  </div>
+</article>
+
+<article class="job-card" data-area="อุดรธานี" data-deadline="15 มิ.ย. 2569" data-salary="พบเงินเดือน" data-age="ไม่ระบุเพดานอายุ">
+  <div class="card-top">
+    <span class="area-pill">📍 อุดรธานี</span>
+    <span class="type-pill">พนักงานกระทรวงสาธารณสุข</span>
+    <span class="status-pill">ปิด 15 มิ.ย. 2569</span>
+    <span class="age-pill">age45+</span>
+    <span class="ocsc-pill">ไม่ต้อง ภาค ก.</span>
+  </div>
+  <h3>พนักงานกระทรวงสาธารณสุข 3 อัตรา</h3>
+  <p class="agency">🏛️ สำนักงานสาธารณสุขจังหวัดอุดรธานี</p>
+  <div class="mini-grid">
+    <div><b>จำนวน</b><span>3 อัตรา</span></div>
+    <div><b>ช่วงสมัคร / วันปิดรับ</b><span>9–15 มิ.ย. 2569 — ปิดรับ 15 มิ.ย. 2569</span></div>
+    <div><b>เงินเดือน/ค่าตอบแทน</b><span>15,000–18,000 บาท/เดือน</span></div>
+    <div><b>สถานที่ทำงาน</b><span>สำนักงานสาธารณสุขจังหวัดอุดรธานี หรือหน่วยบริการเจ้าของตำแหน่งในจังหวัดอุดรธานี</span></div>
+    <div><b>เงื่อนไขอายุที่เข้าเกณฑ์</b><span>ไม่พบเพดานอายุสูงสุดในข้อมูลหลักที่เปิดดู; จัดเป็นเข้าเกณฑ์แบบไม่ระบุอายุ</span></div>
+    <div><b>ไม่ต้องผ่าน ภาค ก./ก.พ.</b><span>ไม่ต้องผ่าน ภาค ก./ก.พ. — แหล่งหลักระบุไม่ผ่าน ก.พ.</span></div>
+    <div><b>วุฒิ/เงื่อนไข</b><span>ปริญญาตรีสาธารณสุข / แพทย์แผนไทย / บัญชี ตามตำแหน่ง</span></div>
+    <div><b>วิธีสมัคร</b><span>ยื่นใบสมัครด้วยตนเอง 9–15 มิ.ย. 2569 ในวันเวลาราชการ</span></div>
+    <div><b>แหล่งที่ใช้คัด</b><span>เปิดสอบราชการ.com</span></div>
+  </div>
+  <div class="link-actions">
+    <a class="apply-link" href="https://www.xn--12cr3ayd4cc5c1a6ccp8m.com/view/%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%82-3-%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2" target="_blank" rel="noopener">เปิดประกาศหลัก ↗</a>
+    <a class="backup-link" href="https://www.google.com/search?q=%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%AA%E0%B8%B8%E0%B8%82%203%20%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%2015%2C000%2018%2C000%2015%20%E0%B8%A1%E0%B8%B4%E0%B8%96%E0%B8%B8%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%99%202569" target="_blank" rel="noopener">ลิงก์สำรอง / ค้นหา ↗</a>
+  </div>
+</article>
+
+<article class="job-card" data-area="อุดรธานี" data-deadline="10 มิ.ย. 2569" data-salary="ไม่พบเงินเดือน" data-age="ไม่ระบุเพดานอายุ">
+  <div class="card-top">
+    <span class="area-pill">📍 อุดรธานี</span>
+    <span class="type-pill">ลูกจ้างชั่วคราว / ครูอัตราจ้าง</span>
+    <span class="status-pill">ปิด 10 มิ.ย. 2569</span>
+    <span class="age-pill">age45+</span>
+    <span class="ocsc-pill">ไม่ต้อง ภาค ก.</span>
+  </div>
+  <h3>ลูกจ้างชั่วคราว: ครูอัตราจ้าง วิชาเอกคณิตศาสตร์</h3>
+  <p class="agency">🏛️ โรงเรียนอนุบาลอุดรธานี</p>
+  <div class="mini-grid">
+    <div><b>จำนวน</b><span>1 อัตรา</span></div>
+    <div><b>ช่วงสมัคร / วันปิดรับ</b><span>4–10 มิ.ย. 2569 — ปิดรับ 10 มิ.ย. 2569</span></div>
+    <div><b>เงินเดือน/ค่าตอบแทน</b><span>ไม่พบตัวเลขเงินเดือนในข้อมูลหลักที่เปิดดู</span></div>
+    <div><b>สถานที่ทำงาน</b><span>โรงเรียนอนุบาลอุดรธานี</span></div>
+    <div><b>เงื่อนไขอายุที่เข้าเกณฑ์</b><span>ไม่พบเพดานอายุสูงสุดในข้อมูลหลักที่เปิดดู; จัดเป็นเข้าเกณฑ์แบบไม่ระบุอายุ</span></div>
+    <div><b>ไม่ต้องผ่าน ภาค ก./ก.พ.</b><span>ไม่ต้องผ่าน ภาค ก./ก.พ. — แหล่งหลักระบุไม่ผ่าน ก.พ.</span></div>
+    <div><b>วุฒิ/เงื่อนไข</b><span>ปริญญาตรี สาขาวิชาเอกคณิตศาสตร์</span></div>
+    <div><b>วิธีสมัคร</b><span>สมัครด้วยตนเองที่ห้องบริหารงานบุคคล โรงเรียนอนุบาลอุดรธานี ถึง 10 มิ.ย. 2569</span></div>
+    <div><b>แหล่งที่ใช้คัด</b><span>เปิดสอบราชการ.com</span></div>
+  </div>
+  <div class="link-actions">
+    <a class="apply-link" href="https://www.xn--12cr3ayd4cc5c1a6ccp8m.com/view/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3-%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A7-1-%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2-4-10-%E0%B8%A1%E0%B8%B4-%E0%B8%A2-2569" target="_blank" rel="noopener">เปิดประกาศหลัก ↗</a>
+    <a class="backup-link" href="https://www.google.com/search?q=%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%84%E0%B8%A3%E0%B8%B9%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87%20%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%95%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%204%2010%20%E0%B8%A1%E0%B8%B4%E0%B8%96%E0%B8%B8%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%99%202569" target="_blank" rel="noopener">ลิงก์สำรอง / ค้นหา ↗</a>
+  </div>
+</article>
+
+<article class="job-card" data-area="อุดรธานี" data-deadline="19 มิ.ย. 2569" data-salary="พบเงินเดือน" data-age="ไม่ระบุเพดานอายุ">
+  <div class="card-top">
+    <span class="area-pill">📍 อุดรธานี</span>
+    <span class="type-pill">ลูกจ้างชั่วคราวรายวัน</span>
+    <span class="status-pill">ปิด 19 มิ.ย. 2569</span>
+    <span class="age-pill">age45+</span>
+    <span class="ocsc-pill">ไม่ต้อง ภาค ก.</span>
+  </div>
+  <h3>ลูกจ้างชั่วคราวรายวัน</h3>
+  <p class="agency">🏛️ โรงพยาบาลอุดรธานี</p>
+  <div class="mini-grid">
+    <div><b>จำนวน</b><span>10 อัตรา</span></div>
+    <div><b>ช่วงสมัคร / วันปิดรับ</b><span>3–19 มิ.ย. 2569 — ปิดรับ 19 มิ.ย. 2569</span></div>
+    <div><b>เงินเดือน/ค่าตอบแทน</b><span>380–440 บาท/วัน</span></div>
+    <div><b>สถานที่ทำงาน</b><span>โรงพยาบาลอุดรธานี</span></div>
+    <div><b>เงื่อนไขอายุที่เข้าเกณฑ์</b><span>ไม่พบเพดานอายุสูงสุดในข้อมูลหลักที่เปิดดู; จัดเป็นเข้าเกณฑ์แบบไม่ระบุอายุ</span></div>
+    <div><b>ไม่ต้องผ่าน ภาค ก./ก.พ.</b><span>ไม่ต้องผ่าน ภาค ก./ก.พ. — เป็นลูกจ้างชั่วคราวรายวัน / แหล่งหลักอยู่ในหมวดงานราชการไม่ผ่าน ก.พ.</span></div>
+    <div><b>วุฒิ/เงื่อนไข</b><span>ม.3/ม.6 และอื่น ๆ ตามตำแหน่ง</span></div>
+    <div><b>วิธีสมัคร</b><span>สมัครด้วยตนเองตามประกาศโรงพยาบาลอุดรธานี ถึง 19 มิ.ย. 2569</span></div>
+    <div><b>แหล่งที่ใช้คัด</b><span>เปิดสอบราชการ.com</span></div>
+  </div>
+  <div class="link-actions">
+    <a class="apply-link" href="https://www.xn--12cr3ayd4cc5c1a6ccp8m.com/view/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A7-%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B8%B1%E0%B8%99-10-%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2" target="_blank" rel="noopener">เปิดประกาศหลัก ↗</a>
+    <a class="backup-link" href="https://www.udonhospital.go.th/" target="_blank" rel="noopener">ลิงก์สำรอง / ค้นหา ↗</a>
+  </div>
+</article>
+
+<article class="job-card" data-area="อุดรธานี" data-deadline="12 มิ.ย. 2569" data-salary="ไม่พบเงินเดือน" data-age="อายุชัดเจน">
+  <div class="card-top">
+    <span class="area-pill">📍 อุดรธานี</span>
+    <span class="type-pill">จ้างเหมาเอกชนดำเนินงาน</span>
+    <span class="status-pill">ปิด 12 มิ.ย. 2569</span>
+    <span class="age-pill">age45+</span>
+    <span class="ocsc-pill">ไม่ต้อง ภาค ก.</span>
+  </div>
+  <h3>พนักงานจ้างเหมาเอกชนดำเนินงาน (TOR)</h3>
+  <p class="agency">🏛️ อุทยานแห่งชาติภูหินจอมธาตุ–ภูพระบาท</p>
+  <div class="mini-grid">
+    <div><b>จำนวน</b><span>2 อัตรา</span></div>
+    <div><b>ช่วงสมัคร / วันปิดรับ</b><span>บัดนี้–12 มิ.ย. 2569 — ปิดรับ 12 มิ.ย. 2569</span></div>
+    <div><b>เงินเดือน/ค่าตอบแทน</b><span>ไม่พบตัวเลขเงินเดือนในข้อมูลหลักที่เปิดดู</span></div>
+    <div><b>สถานที่ทำงาน</b><span>อุทยานแห่งชาติภูหินจอมธาตุ–ภูพระบาท จังหวัดอุดรธานี</span></div>
+    <div><b>เงื่อนไขอายุที่เข้าเกณฑ์</b><span>ระบุอายุ 18–60 ปี จึงสอดคล้องกับผู้สมัครอายุเกิน 45</span></div>
+    <div><b>ไม่ต้องผ่าน ภาค ก./ก.พ.</b><span>ไม่ต้องผ่าน ภาค ก./ก.พ. — แหล่งหลักระบุไม่ผ่าน ก.พ.</span></div>
+    <div><b>วุฒิ/เงื่อนไข</b><span>ปริญญาตรี GIS / ม.3 ขึ้นไป ตามตำแหน่ง</span></div>
+    <div><b>วิธีสมัคร</b><span>สมัครออนไลน์หรือสมัครที่อุทยานฯ ถึง 12 มิ.ย. 2569</span></div>
+    <div><b>แหล่งที่ใช้คัด</b><span>เปิดสอบราชการ.com</span></div>
+  </div>
+  <div class="link-actions">
+    <a class="apply-link" href="https://www.xn--12cr3ayd4cc5c1a6ccp8m.com/view/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B8%AB%E0%B8%B4%E0%B8%99%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8-%E0%B8%A0%E0%B8%B9%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%97-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3-%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%8A%E0%B8%99%E0%B8%94%E0%B8%B3%E0%B9%80%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%99-tor-2-%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2" target="_blank" rel="noopener">เปิดประกาศหลัก ↗</a>
+    <a class="backup-link" href="https://www.google.com/search?q=%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A0%E0%B8%B9%E0%B8%AB%E0%B8%B4%E0%B8%99%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%20%E0%B8%A0%E0%B8%B9%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%97%20%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%202%20%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2%2012%20%E0%B8%A1%E0%B8%B4%E0%B8%96%E0%B8%B8%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%99%202569" target="_blank" rel="noopener">ลิงก์สำรอง / ค้นหา ↗</a>
+  </div>
+</article>
+
+<article class="job-card" data-area="อุดรธานี" data-deadline="16 มิ.ย. 2569" data-salary="พบเงินเดือน" data-age="ไม่ระบุเพดานอายุ">
+  <div class="card-top">
+    <span class="area-pill">📍 อุดรธานี</span>
+    <span class="type-pill">ลูกจ้างทุนหมุนเวียน</span>
+    <span class="status-pill">ปิด 16 มิ.ย. 2569</span>
+    <span class="age-pill">age45+</span>
+    <span class="ocsc-pill">ไม่ต้อง ภาค ก.</span>
+  </div>
+  <h3>ลูกจ้างทุนหมุนเวียน: ผู้ดูแลสนามบิน</h3>
+  <p class="agency">🏛️ ท่าอากาศยานอุดรธานี กรมท่าอากาศยาน</p>
+  <div class="mini-grid">
+    <div><b>จำนวน</b><span>1 อัตรา</span></div>
+    <div><b>ช่วงสมัคร / วันปิดรับ</b><span>4–16 มิ.ย. 2569 — ปิดรับ 16 มิ.ย. 2569</span></div>
+    <div><b>เงินเดือน/ค่าตอบแทน</b><span>11,000 บาท/เดือน</span></div>
+    <div><b>สถานที่ทำงาน</b><span>ท่าอากาศยานอุดรธานี</span></div>
+    <div><b>เงื่อนไขอายุที่เข้าเกณฑ์</b><span>ข้อมูลหลักเปิดดูไม่พบเพดานอายุสูงสุด; ไฟล์แนบของหน่วยงานควรตรวจซ้ำก่อนสมัคร</span></div>
+    <div><b>ไม่ต้องผ่าน ภาค ก./ก.พ.</b><span>ไม่ต้องผ่าน ภาค ก./ก.พ. — แหล่งหลักระบุไม่ผ่าน ก.พ.</span></div>
+    <div><b>วุฒิ/เงื่อนไข</b><span>ไม่ต่ำกว่า ม.6 หรือเทียบเท่า + ใบขับขี่รถยนต์</span></div>
+    <div><b>วิธีสมัคร</b><span>สมัครด้วยตนเอง ณ ท่าอากาศยานอุดรธานี ถึง 16 มิ.ย. 2569</span></div>
+    <div><b>แหล่งที่ใช้คัด</b><span>เปิดสอบราชการ.com / กรมท่าอากาศยาน</span></div>
+  </div>
+  <div class="link-actions">
+    <a class="apply-link" href="https://www.xn--12cr3ayd4cc5c1a6ccp8m.com/view/%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B8%AB%E0%B8%A1%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%99-1-%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%B2" target="_blank" rel="noopener">เปิดประกาศหลัก ↗</a>
+    <a class="backup-link" href="https://www.airports.go.th/post/view/41885" target="_blank" rel="noopener">ลิงก์สำรอง / ค้นหา ↗</a>
+  </div>
+</article></section>
+<footer>ไฟล์นี้คัดตามเกณฑ์ age45+ / no-OCSC / deadline ≥ 9 Jun 2026 — ก่อนสมัครจริงโปรดเปิดประกาศหลักหรือไฟล์แนบเพื่อตรวจคุณสมบัติ เอกสาร และสถานที่อีกครั้ง</footer>
+</main>
+<script>
+const buttons=document.querySelectorAll('.filters button');const cards=document.querySelectorAll('.job-card');
+buttons.forEach(btn=>{btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;cards.forEach(card=>{let m=false;if(f==='ทั้งหมด')m=true;else if(card.dataset.area===f)m=true;else if(f==='ปิดวันนี้ 9 มิ.ย.')m=card.dataset.deadline==='9 มิ.ย. 2569';else if(f==='ปิดหลัง 9 มิ.ย.')m=card.dataset.deadline!=='9 มิ.ย. 2569';else if(card.dataset.salary===f)m=true;else if(card.dataset.age===f)m=true;card.style.display=m?'flex':'none';});});});
+</script></body></html>
